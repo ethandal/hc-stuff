@@ -2,8 +2,8 @@ import time
 
 print("Welcome to the Career Advisor Program!")
 
-name = input("Enter your name: ")
-age = int(input("Enter your age: "))
+name = input("What is your name?: ")
+age = int(input("How old are you?: "))
 nation = input("What country are you from? ")
 
 print(f"Hello {name}!")
