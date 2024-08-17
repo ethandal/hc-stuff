@@ -1,0 +1,60 @@
+import time
+
+print("Welcome to the Career Advisor Program!")
+
+name = input("Enter your name: ")
+age = int(input("Enter your age: "))
+nation = input("What country are you from? ")
+
+print(f"Hello {name}!")
+
+if age < 5:
+    print("You're still a young one! Enjoy your childhood and don't worry about your career just yet.")
+elif 5 <= age <= 6:
+    print("You're in Kindergarten! Keep learning and having fun.")
+elif 7 <= age <= 11:
+    print("You're in Primary school. Study hard and enjoy your childhood!")
+elif 12 <= age <= 16:
+    print("You're in Secondary school. Study hard and work hard for your O/N Levels!")
+    time.sleep(2)
+    post_sec_edu = input("What do you want to do after secondary school? (University, Polytechnic, Junior College, ITE, MI, Vocational Training, Enter Workforce): ").strip().lower()
+    if post_sec_edu == "polytechnic":
+        print("Good luck with your polytechnic applications!")
+    elif post_sec_edu == "junior college":
+        print("Good luck with your junior college applications!")
+    elif post_sec_edu == "ite":
+        print("Good luck with {post_sec_edu}!")
+    elif post_sec_edu == "mi":
+        print("Good luck with {post_sec_edu}!")
+    elif post_sec_edu == "vocational training":
+        print("Good luck with your vocational training!")
+    elif post_sec_edu == "enter workforce":
+        print("Good luck with your job search!")
+    else:
+        print("Invalid input. Please try again.")
+else:
+    doing_currently = input("What are you doing now? (Studying, working, or unemployed): ").strip().lower()
+    
+    if doing_currently == "studying":
+        print("Study hard and stay focused!")
+    elif doing_currently == "working":
+        print("Work hard and save money!")
+    elif doing_currently == "unemployed":
+        work_interested = input("What kind of work are you interested in? (Healthcare, Technology, Business, Arts, Teaching, Policing, Other): ").strip().lower()
+        
+        if work_interested == "healthcare":
+            print("You should consider a career in nursing, medicine, or healthcare administration.")
+        elif work_interested == "technology":
+            print("You should consider a career in software development, data science, or cybersecurity.")
+        elif work_interested == "business":
+            print("You should consider a career in finance, marketing, or management.")
+        elif work_interested == "arts":
+            print("You should consider a career in graphic design, writing, or the performing arts.")
+        elif work_interested == "teaching":
+            print("You should consider a career in education, teaching, or tutoring.")
+        elif work_interested == "policing":
+            print("You should consider a career in law enforcement, criminology, or forensic science.")
+        else:
+            print("You should consider a career in a field that aligns with your interests and skills.")
+        time.sleep(2)
+       
