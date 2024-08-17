@@ -1,3 +1,4 @@
+# Making a Career Advisor Program, basic code using Python
 import time
 
 print("Welcome to the Career Advisor Program!")
